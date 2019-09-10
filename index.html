@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="main.js">
+
+        </script>
+  </head>
+  <body>
+      <div class="intro">
+        My Simple Calculator
+      </div>
+      <div class="calculator">
+        <input type="text" class="calc-display" value="">
+        <table>
+          <tr>
+            <td><input class="icon" type="button" value="C" onclick="c()"></td>
+            <td><input class="icon" type="button" value="/" onclick="insrt('/')"></td>
+            <td><input class="icon" type="button" value="<" onclick="del()"></td>
+            <td><input class="icon" type="button" value="x" onclick="insrt('*')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="7" onclick="insrt(7)"></td>
+            <td><input type="button" value="8" onclick="insrt(8)"></td>
+            <td><input type="button" value="9" onclick="insrt(9)"></td>
+            <td><input class="icon" type="button" value="-" onclick="insrt('-')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="4" onclick="insrt(4)" onclick="insrt(7)" onclick="insrt(7)"></td>
+            <td><input type="button" value="5" onclick="insrt(5)" onclick="insrt(7)"></td>
+            <td><input type="button" value="6" onclick="insrt(6)"></td>
+            <td><input class="icon" type="button" value="+" onclick="insrt('+')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="1" onclick="insrt(1)" onclick="insrt(7)" onclick="insrt(7)"></td>
+            <td><input type="button" value="2" onclick="insrt(2)" onclick="insrt(7)"></td>
+            <td><input type="button" value="3" onclick="insrt(3)"></td>
+            <td rowspan="2"><input id="equal" type="button" value="=" onclick="eq()"></td>
+          </tr>
+          <tr>
+            <td colspan="2" ><input style="width:152px" type="button" value="0"  onclick="insrt(0)"></td>
+            <td><input class="icon" type="button" value="." onclick="insrt('.')"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="bg">
+            <img src="calc.jpg" alt="">
+      </div>
+
+  </body>
+</html>
